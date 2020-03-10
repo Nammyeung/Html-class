@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <meta charset = "utf-8">
+    <style>
+        #box1{
+            color : rgb(0, 0, 128);            
+            /* red green blue */
+            /* color : #808080; */
+            /* 16진수 2개씩 => 16*16 = 256 */
+            /* 2개가 1byte */
+            /* (0 ~ 256) */
+            /* FF0000 : 빨간색 // 00FF00 : 초록 // 0000FF : 블루 */
+            /* FF00FF : RED 와 BLUE를 섞음 => 핑크 (빛의 색깔로 적용) */
+            /* FFFFFF : 흰색 333333 : 살짝 진한 회색 => 숫자가 높아질수록 색상 적용?*/
+            border-bottom: 5px solid pink;
+            /* border : 3px dotted red; */
+            background-color : #00eeff;
+            /* border : 3px solid red; */
+        }   
+
+        ul{
+            border : 1px solid black;
+        }
+
+        li{
+            border : 1px solid red;
+            height : 40px;
+            width : 200px;
+            /* default가 word breaking이 된다. */
+            /* ***** 주의 : 1px만 글자가 벗어나면 전체가 다 무너진다 */
+        }
+        /* ******div 박스의 속성****** */
+        #box2 {
+            border : 1px solid blue;
+            width : 300px;
+            height : 500px;
+        }
+
+    </style>
+    <head>
+        <meta charset = "utf-8">
+
+    </head>
+    <body>
+        <div id = "box1">안녕하세요</div>
+
+
+        <ul> <!-- unordered list -->
+            <li>안녕하세요</li>
+            <li>안녕하세요</li>
+            <li>안녕하세요</li>
+            <li>안녕하세요</li>
+            <li>안녕하세요</li>
+        </ul>
+
+        <div id = "box2">div 박스<br> 안녕하세요 </div>
+        <!-- div 박스의 속성 : 자동으로 컨텐츠의 내용이 많아지면 
+        박스의 높이가 자동으로 증가 -->
+    </body>
+
+</html>

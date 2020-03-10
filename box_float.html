@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            #box1{
+                width : 200px;
+                height : 200px;
+                background-color : blue;
+                float : left;
+            }
+            /* Box가 순차적으로 박스가 먼저 float의 방향에 따라 붙는다 */
+            
+            #box2{
+                width : 200px;
+                height : 200px;
+                background-color : red;
+                float : left;
+            }
+            
+            .boxes{
+                width : 200px;
+                height : 200px;
+                background-color: greenyellow;
+                float : left;
+            }
+
+            .small_boxes{
+                width : 45px;
+                height : 45px;
+                float : left;
+                /* box의 크기에 맞춰서 들어감 창의 크기를 조정할 때 마다 줄어드는 성질 */
+                /* 따라서 정확하게 상자 안에 가둬놔야 */
+                background-color : chartreuse;
+            }
+
+            #wrapper{
+                width : 700px;
+                height : 700px;
+                border : 3px solid black;
+            }
+
+        </style>
+    </head>
+    <body>
+    <!-- body는 웹 브라우저의 크기를 의미하므로 가변형 => 창의 크기를 움직일 때마다 내용이 변형 -->
+
+        <div id = "wrapper">
+        <!-- wrapper를 통해 700px로 고정된 박스안에서 형성되도록 설정 -->
+            <div id = "box1">
+                <div class = "small_boxes"></div>
+                </div>
+                <div id = "box2"></div>
+                <div class = "boxes"></div>
+                <div class = "boxes"></div>
+                <div class = "boxes">
+                    <div class = "small_boxes"></div>
+                    <div class = "small_boxes"></div>
+                    <div class = "small_boxes"></div>
+                    <div class = "small_boxes"></div>
+                </div>
+                <div class = "boxes"></div>
+                <div class = "boxes"></div>
+        </div>
+        <!-- ********************레이아웃이 안무너지는 방법 : wrapper********************** -->
+        <div id = "box1">
+        <div class = "small_boxes"></div>
+        </div>
+        <div id = "box2"></div>
+        <div class = "boxes"></div>
+        <div class = "boxes"></div>
+        <div class = "boxes">
+            <div class = "small_boxes"></div>
+            <div class = "small_boxes"></div>
+            <div class = "small_boxes"></div>
+            <div class = "small_boxes"></div>
+        </div>
+             
+    </body>
+</html>
