@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            *{
+                /* *{} : 모든 선택자 => 모든 태크는 
+                pading과 margin을 없애겠다 */
+                margin : 0px;
+                padding : 0px;
+            }
+
+            #wrapper{
+                width : 700px;
+                height : 600px;
+                background-color : chartreuse;
+                margin : 30px auto;
+                /* 위쪽(30px은 임의적으로 설정했지만 auto는 자동으로 맞추겠다) */
+            }
+
+            #top{
+                width : 700px;
+                height : 150px;
+                background-color : coral;
+            }
+
+            #middle{
+                width : 700px;
+                height : 300px;
+                background-color : cornsilk;
+            }
+
+            #bottom{
+                width : 700px;
+                height : 150px;
+                background-color : cyan;
+            }
+
+            #m-1{
+                width : 200px;
+                height : 300px;
+                background-color : greenyellow;
+                float : left;
+            }
+            /* float를 둘다 줘야 박스 간 겹치는 문제가 발생하지 않는다. */
+            #m-2{
+                width : 300px;
+                height : 300px;
+                background-color : pink;
+                float : left;
+            }
+
+            #m-3{
+                width : 200px;
+                height : 300px;
+                background-color : darkgreen;
+                float : left;
+                /* float => 왼쪽의 박스를 인식하는 코드? */
+            }
+
+            #logo-box{
+                width : 132px;
+                height : 70px;
+                background-color : white;
+                /* 세밀한 조정을 해야 할 필요성 */
+                float : left;
+                position : relative;
+                /* position의 default : static */
+                left : 30px;
+                top : 30px;
+                /* 이동을 하는데 다음 박스에 영향을 주지 않음 */
+                /* padding : 30px 0px 0px 0px; */
+                /* margin과 같이 이미지의 높이를 조정할 수 있음 */
+            }
+
+            #some-box{
+                width : 300px;
+                height : 150px;
+                background-color : darkseagreen;
+                float : left;
+            }
+
+            #ad-box{
+                width : 100px;
+                height : 400px;
+                background-color: teal;
+                position : fixed;
+                left : 70%;
+                /* 감싸고 있는 박스의 70%위치 */
+                top : 10%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id = "wrapper">
+            <div id = "top">
+                <div id = "logo-box">
+                    <img src = "./testimg/logo_nexon.png">
+                    <!-- 넥슨 로고가 삐져나옴 => 레이아웃을 잘 잡아야 하는 이유 -->
+                </div>
+                <div id = "some-box"></div>
+                
+            </div>
+            <!-- 위쪽 상자 -->
+            <div id = "middle">
+                <div id = "m-1"></div>
+                <div id = "m-2"></div>
+                <div id = "m-3"></div>
+            </div>
+            <!-- 중간 상자 -->
+            <div id = "bottom"></div>
+            <!-- 바닥 상자 -->
+        </div>
+
+        <div id = "ad-box">
+
+        </div>
+
+
+        <pre>
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </pre>
+
+    </body>
+</html>
