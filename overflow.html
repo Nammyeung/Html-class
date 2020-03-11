@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <style>
+        #main-box{
+            border : 1px solid black;
+            width : 100px;
+            height : 100px;
+            overflow : hidden;
+            /* overflow : scroll; */
+            /* 글자 넘어가면 범위도 같이 넓어지나?? */
+            /* overflow : 한정된 공간에서 넘치는 경우 보정*/
+            /* overflow : hidden => 넘쳤지만 숨기겠다. */
+        }
+        #top{
+            border : 2px solid black;
+            overflow : hidden;
+            /* overflow : auto; */
+        }
+
+        .nav{
+            background-color : red;
+            width : 200px;
+            float : left;
+            /* overflow 상황이 발생 */
+        }
+
+    </style>
+    </head>
+    <body>
+        <div id = "main-box">
+            <img src = "./testimg/logo_nexon.png">
+        </div>
+
+        <div id = "top">
+            <!-- 네비게이션 박스 -->
+            <div class = "nav">상식</div>
+            <div class = "nav">회사</div>
+            <div class = "nav">안내</div>
+        </div>
+    </body>
+</html>

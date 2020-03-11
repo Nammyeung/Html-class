@@ -6,45 +6,38 @@
 
    #wrapper{
        width : 1100px;
-       height : 1500px;
-       background-color : greenyellow;
+       height : auto;
    }
    #top1{
         width : 1100px;
         height :150px;
-        background-color : yellow;
         }
     #top2{
         width : 1100px;
-        height : 50px;
-        background-color : sandybrown;
+        height : 5px;
+        background-color :whitesmoke;
         }
     #middle1{
         width : 1100px;
         height : 100px;
-        background-color : plum;        
+       
     }
     #middle2{
         width : 1100px;
-        height : 150px;
-        background-color : powderblue;        
+        height : 150px;       
     }
     #m2-1{
-        float : left;
-        background-color : powderblue;        
+        float : left;      
     }
     #m2-2{
-        float : left;
-        background-color : powderblue;        
+        float : left;       
     }
     #m2-3{
-        float : left;
-        background-color : powderblue;        
+        float : left;        
     }
     #middle3{
         width : 1100px;
-        height : 200px;       
-        background-color : tomato;        
+        height : 200px;              
     }
     #m3-1{
         float : left;      
@@ -60,21 +53,95 @@
                 float : right;
                 position : relative;
                 /* position의 default : static */
-                right : 0px;
+                right : 50px;
                 top : -50px;
     }
     #m3-3{
-        float : left;     
+        float : right;     
     }
-    #middle4{
+    .middle4{
         width : 1100px;
-        height : 200px;        
-        background-color : tan;        
+        height : auto;        
+        float : left;       
     }
-    #bottom{
+    .m4-1{
+        width : 165px;
+        height : auto;
+        margin : 5px 5px;
+        float : left;
+    }
+    .m4-2{
+        width : 165px;
+        height : auto;
+        margin : 5px 5px;
+        float : left;
+    }
+    .m4-3{
+        width : 165px;
+        height : auto;
+        margin : 5px 5px;
+        float : left;
+    }
+    .m4-4{
+        width : 165px;
+        height : auto;
+        margin : 5px 5px;
+        float : left;
+    }
+    .m4-5{
+        width : 165px;
+        height : auto;
+        margin : 5px 5px;
+        float : left;
+    }
+    .m4-6{
+        width : 165px;
+        height : auto;
+        float : left;
+        
+    }
+    .bottom{
         width : 1100px;
-        height : 200px;
-        background-color : blanchedalmond; 
+        height : 100px;
+        background-color : skyblue;
+        float : right;
+        margin : 20px auto; 
+    }
+
+    .bottom-menu{
+        font-size : 10px;
+    }
+
+    .bottom-menu1{
+        float : left;
+    }
+
+    .bottom-menu2{
+        float : left;
+    }
+
+    .bottom-menu3{
+        float : left;
+    }
+
+    .bottom-menu4{
+        float : left;
+    }
+
+    .bottom-menu5{
+        float : left;
+    }
+
+    .bottom-menu6{
+        float : left;
+    }
+    
+    .bottom-menu7{
+        float : left;
+    }
+    
+    .bottom-menu8{
+        float : left;
     }
 
     </style>
@@ -102,7 +169,7 @@
      <div id = "middle3">
         <div id = "m3-1">
         <img src = "./testimg/customer.gif" 
-        style = "width : 360px; height : auto;">
+        style = "width : 340px; height : auto;">
         </div>
         <div id = "m3-2">
         <h2>공지사항</h2>
@@ -116,11 +183,77 @@
         </div>
         <div id = "m3-3">
             <img src = "./testimg/banner_faq.gif"
-            style = "width : auto; height : auto;">      
+            style = "width : 310px; height : 195px;">      
         </div>
     </div>
-     <div id = "middle4"></div>
-     <div id = "bottom"></div>
-    </div>   
+     <div class = "middle4">
+        <div class = "m4-1">
+            <h3 style = "color : #00A8AB;">손해보험 상식</h3>
+            <ul type = "square"> 
+                <li>손해보험이란?</li>
+                <li>나에게 필요한 보험은?</li>
+                <li>보험약관의 중요성</li>
+                <li>손해보험의 특징</li>         
+
+            </ul>
+        </div>
+        <div class = "m4-2">
+            <h3 style = "color : #00A8AB;">루바토 보험의 장점</h3>
+            <ul type = "square #00A8AB" > 
+                <li>보험료 저렴</li>
+                <li>신속한 처리 및 보상</li>
+                <li>연기 시 원리금 보장</li>       
+
+            </ul>
+        </div>
+        <div class = "m4-3">
+            <h3 style = "color : #00A8AB;">고객센터</h3>
+            <ul type = "square"> 
+                <li>전국 지점 안내</li>
+                <li>손해배상 안내</li>
+                <li>손해보험 FAQ</li>       
+                <li>질문과 답변</li>
+            </ul>
+        </div>
+        <div class = "m4-4">
+            <h3 style = "color : #00A8AB;">마이페이지</h3>
+            <ul type = "square"> 
+                <li>계약 조회/변경</li>
+                <li>보험 계약 갱신</li>
+                <li>보험료 납입</li>
+                <li>증명서 발급</li>       
+
+            </ul>
+        </div>
+        <div class = "m4-5">
+            <h3 style = "color : #00A8AB;">기업 안내</h3>
+            <ul type = "square">
+                <li>공인인증센터</li> 
+                <li>인증서 발급/갱신</li>
+                <li>인증서 폐기</li>
+                <li>웹 로그인</li>       
+
+            </ul>
+        </div>
+        <div class = "m4-6">
+            <h3 style = "color : #00A8AB;">회사 소개</h3>
+            <ul type = "square"> 
+                <li>기업소개</li>
+                <li>찾아오시는 길</li>   
+            </ul>
+        </div>
+     <div class = "bottom">
+        <div class = "bottom-menu">
+            <div class = "bottom-menu1">개인정보 취급방침 |</div>
+            <div class = "bottom-menu2">이용 안내 |</div>
+            <div class = "bottom-menu3">이메일 무단수집 거부</div>
+            <br>
+            <div class = "bottom-menu4">서민금융119서비스 |</div>
+            <div class = "bottom-menu5">보험범죄 신고 |</div>
+            <div class = "bottom-menu6">전자 민원 접수 |</div>
+            <div class = "bottom-menu7">보험약관 안내 |</div>
+            <div class = "bottom-menu8">금융사기신고센터</div>
+        </div>
+    </div>      
     </body>
 </html>
